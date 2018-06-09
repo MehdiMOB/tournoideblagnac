@@ -1,46 +1,48 @@
-
-#distribution-verticale_index { /*pour ajuster la video et les 3 blocs*/
-	display: flex;
-	flex-direction: column;
-}
-
-#div_video{
-	flex: 0 0 auto;
-}
-
-#video{
-    height: 35vh;
-}
-
-.avantages{
-	margin: 8px auto 0px auto !important;
-	padding: 0px 14%;
+#distribution-verticale_index {
 	display: flex;
 }
 
-.colonnes{
-  border: solid #b6b6b6 1px;
-  padding: 10px;
-  margin: 0px 3%;
-  flex: 1;
+.video{
+    position : static;
 }
 
-.cercles_colonnes > img{
-	border: solid #004bff 3px;
-	border-radius: 50%;
-	padding: 7px;
-	max-width: 12vw;
-}
-
-
-@media screen and (max-width: 528px) /*sur petits ecrans les 3 blocs sont vertical*/
+table
 {
-	.avantages{     /* Les trois blocs distribué verticalement */
-		flex-direction: column;
-		
-	}
+ border: 2px solid black;
+ border-collapse: collapse; /*fusion des bordures*/
+ margin-left: auto;
+ margin-right: auto;
+ color:#00284d;
+}
+caption 
+{
+ background: #808080 ;
+ border: 2px solid black;
+ border-bottom: none;
+ padding: 5px;
+ font-size: 220%;
+ font-weight: bold;
+ color: #00284d;
+}
+td, th
+{
+ color:#00284d;
+ border: 2px solid black;
+ padding: 5px;
+ text-align: center;
+ font-size: 150%;
+}
+h1
+{
+color:#00284d;
+text-align: center;
+font-family: "Comic Sans MS";
+font-size: 4em;
+font-style: italic;
+}
+
+
+@media screen and (max-width: 528px) 
+{
 	
-	.colonnes{
-		margin-bottom:10px;		/* une petite marge entre les 3 blocs */
-	}
 }
