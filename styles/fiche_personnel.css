@@ -1,0 +1,44 @@
+.staff
+{
+	height: 100%;               /*prend toute la place*/
+	background-color: #eaeaea;;   /*couleur de fond*/
+	flex: 1;                    /*prend la place qu'il reste*/
+	padding: 10px;
+	border: solid #d1cfcf 1px;
+}
+
+article 
+{
+	border: 5px solid #009cff; /*bordure bleu*/
+	text-align: center;
+	flex: 1; /* prend tous leur longueur*/
+    max-width: 300px; /*largeur max 300px*/
+	border-radius: 15px;    /*coin arrondi*/
+	background-color: #e7e7e7;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+@media screen and (min-width: 768px)
+{
+	.ligne
+{
+	display: flex; /*utilise flex*/
+	flex-direction: row; /*alligne en ligne*/
+	justify-content: space-around; /*éspace les éléments*/
+	padding-top: 0.25%; /*prend une bordure de 0.25% en haut*/
+	padding-bottom: 0.25%; /*prend une bordure de 0.25% en bas*/
+}
+}
+
+@media screen and (max-width: 768px)
+{
+	article
+	{
+		margin: auto;
+	}
+}

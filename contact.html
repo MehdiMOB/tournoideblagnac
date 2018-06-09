@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Formulaire de contact</title>
+		<link rel="icon" type="image/png" href="favicon.png" /> <!-- image pour les onglet du navigateur, les raccourcis -->
+		<meta name="Author" content="Laboureau Cambien" />
+		<meta name="Keywords" content="webhosting,hebrgement,web,serveur-web" />
+		<meta name="Description" content="On vous heberge chez planet-hosting"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>	<!-- On empeche les appareils de simuler une plus grande resolution -->
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>		<!-- POUR DES SUPERS ICONES -->
+		<link rel="stylesheet" href="./styles/principal.css" />						<!-- CSS DE TOUT LE SITE -->
+		<link rel="stylesheet" href="./styles/contact.css" />							<!-- SPECIFIQUE A LA PAGE-->
+	</head>
+	
+	<body>
+		<header>
+			<div id="div_logo">
+				<img id="logo" src="images/logo.png" alt="logo planet-hosting" />
+			</div>
+			<div id="div_menu">
+				<nav id="nav_menu">
+						<ul id="ul_menu">
+							<li><div class="elements_menu"><a href="./index.html">Accueil</a></div></li>
+							<li><div class="elements_menu"><a href="./offres.html">Offres</a></div></li>
+							<li><div class="elements_menu"><a href="./presentation.html">Qui somme nous</a></div></li>
+							<li><div class="elements_menu"><a href="./fiche_personnel.html">Notre équipe</a></div></li>
+							<li><div class="elements_menu"><a href="./contact.html">Nous contacter</a></div></li>
+						</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<div id="page_content">		<!-- Contient le contenu specifique de la page -->
+		
+			<div id="formulaire-contact">
+				<form class="form" method="post" name="contact" id="contact" action="mailto:commercial@planethosting.com">
+					<fieldset>
+						<legend> A propos de vous : </legend>
+							<p>
+								<label for="pays">Selectionnez votre pays</label>:
+								<select id="pays" name="pays" size="4" required >
+								    <option value="FR" selected >France</option>
+									<option value="BE">Belgium</option>
+									<option value="GB">United Kingdom</option>
+									<option value="US">United States</option>
+								</select>
+							</p>
+
+							<p>
+								<label for="nom">Nom</label>:
+								<input id="nom" required autofocus name="nom" placeholder="dupont" type="text" />
+							</p>
+
+							<p>
+								<label for="prenom">Prenom</label>:
+								<input id="prenom" required name="prenom" placeholder="michel" type="text" />
+							</p>
+
+							<p>
+								<label for="mail">eMail</label>:
+								<input id="mail" required name="mail" placeholder="michel.dupont@lala.com" type="email" />
+							</p>
+							
+							<p>
+								<label for="telephone">Numéro de téléphone</label>:
+								<input name="telephone" id="telephone" type="tel" placeholder="0836656565"/>
+							</p>
+					</fieldset>
+					
+					<fieldset>
+						<legend> Votre message : </legend>
+						<p>
+								<label>type</label>:
+								<br />
+								<input required id="devis" name="type" value="devis" checked="checked" type="radio" /><label for="devis">Devis</label>
+								<input required id="autre" name="type" value="autre" type="radio" /><label for="autre">Autre</label>
+						</p>
+
+						<p>
+							<label for="sujet">Sujet</label>:
+							<input id="sujet" required name="sujet" placeholder="demande d'informations" type="text" />
+						</p>
+						
+						<p>
+							<textarea id="message" required name="message" placeholder="tappez ici votre message"></textarea>
+						</p>
+					</fieldset>
+					
+					<div id="boite-envoi">
+						<button type="reset">Reinitialiser</button>
+						<button type="submit">Envoyer</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+			
+			
+		</div>
+		
+	<!-- Start Footer-->
+    <footer>
+		<!-- gradient compatible ie9 (voir dans head et classe gradient_iexplorer_9) -->
+		<div id="bloc_social_footer" class="gradient_iexplorer_9"> <!-- le bloc de reseaux sociaux, avec un cercle par reseau, avec icone et couleur  -->
+			<div class="cercle_bloc_social_footer"><a class="fa fa-facebook fa-2x" href="https://www.facebook.com/planet-hosting" style="color:#3B5998;"></a></div> <!-- cercle facebook -->
+			<div class="cercle_bloc_social_footer"><a class="fa fa-twitter fa-2x" href="https://twitter.com/planet-hosting" style="color:#55ACEE;"></a></div>		<!-- cercle twitter -->
+			<div class="cercle_bloc_social_footer"><a class="fa fa-phone fa-2x" href="tel:0836656565"></a></div>								<!-- cercle contact telephone -->
+		</div>
+		<div id="copyright_footer">	<!-- infos legales -->
+			<p><a href="/index.html">Planet-hosting&#169;</a> <span style="font-family: 'Courgette', cursive;">Copyright 2017</span> SARL PLANET-HOSTING&#174;<br/><span style="font-family:'Courgette',cursive;">Tous droits r&eacute;serv&eacute;s</span> <br/> <a href="mailto:webmaster@planet-hosting.com">Contact</a></p>
+		</div>
+	</footer>
+	<!-- END Footer-->
+	</body>
+</html>
